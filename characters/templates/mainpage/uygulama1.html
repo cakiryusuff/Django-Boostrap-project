@@ -1,0 +1,149 @@
+{% extends "layout.html"%} 
+
+{% load static %}
+{% block content %}
+    <header id="Home">
+        <div class="carousel slide carousel-fade mt-5 mb-1" data-bs-ride="carousel" id="slider2">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#slider2" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#slider2" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slider2" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'img/a.jpg' %}" class="d-block w-100"  alt="">
+                    <div class="carousel-caption d-none d-md-block text-start d-center">
+                        <h1 class="display-4">Jumbotron</h1>
+                        <p class="lead">This is  a jumbotron created using the bootstrap 5</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </div>
+                </div>
+                <div class="carousel-item d-none d-md-block">
+                    <img src="{% static 'img/1234.jpg' %}" class="d-block w-100"  alt="">
+                </div>
+                <div class="carousel-item d-none d-md-block">
+                    <img src="{% static 'img/82498003_p0.png' %}" class="d-block w-100"  alt="">
+                </div>
+            </div>
+            <a href="#slider2" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider2" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+    <main style="background-color: gray;">
+        <div class="container" style="margin-bottom: 100px;">
+        <div class="row" id="waifus">
+            <div class="col-6 border">
+                <div class="card mb-1">
+                    <img src="{% static 'img/12345.jpg' %}">
+                    
+                    <div class="card-header">
+                        <h4>Aizen Sousuke</h4>
+                        <a href="#collapseOne" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-1">
+                    <img src="{% static 'img/uwp1229665.jpeg' %}">
+                    
+                    <div class="card-header">
+                        <h4>Yotsuba Nakano</h4>
+                        <a href="#collapseTwo" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-1">
+                    <img src="{% static 'img/12.jpg' %}">
+                    
+                    <div class="card-header">
+                        <h4>Marin Kitagawa</h4>
+                        <a href="#collapseTre" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseTre" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 border">
+                <div class="card mb-1">
+                    <img src="{% static 'img/59199683_p0.jpg' %}">
+                    
+                    <div class="card-header">
+                        <h4>Austr Yorua</h4>
+                        <a href="#collapseFour" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="card mb-1">
+                    <img src="{% static 'img/uwp1229453.jpeg' %}">
+                    
+                    <div class="card-header">
+                        <h4>Nakano Nino</h4>
+                        <a href="#collapseFive" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="card mb-1">
+                    <img src="{% static 'img/67552745_p0.png' %}">
+                    
+                    <div class="card-header">
+                        <h4>Marin Kitagawa</h4>
+                        <a href="#collapseSix" class="card-link" data-bs-toggle="collapse">See profile</a>
+                    </div>
+                    <div class="collapse" id="collapseSix" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam alias dolor deserunt tempora quas dolores cupiditate corporis et. Tempore repudiandae debitis accusantium tempora incidunt necessitatibus nesciunt, voluptatum ipsa alias praesentium, perferendis numquam nulla neque dignissimos quas magnam ullam impedit, itaque laboriosam sequi corporis. Corrupti nostrum consectetur rerum nihil maiores. Excepturi adipisci nesciunt nobis voluptatum, quibusdam sit dignissimos reiciendis recusandae similique totam voluptas neque voluptates, exercitationem ipsam ea ut itaque temporibus? Ea cupiditate ipsam alias maiores animi veniam, rerum, ducimus unde dicta dolor accusamus, porro saepe quo! Ipsam hic nostrum voluptate, officiis obcaecati laborum nesciunt architecto rerum officia neque excepturi accusamus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <hr class="my-4" color="black">
+        <div class="card my-3 w-25" id="aboutme">
+            <img src="https://via.placeholder.com/300" class="card-img-top">     
+            <div class="card-header">
+                <h4>Yusuf Çakır</h4>
+                <a href="#collapseSixe" class="card-link" data-bs-toggle="collapse">See profile</a>
+            </div>
+            <div class="collapse" id="collapseSixe">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quos quaerat obcaecati? A, pariatur iusto! Corrupti, expedita? Fugit, quidem alias?  </p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+    </main>
+{% endblock %}

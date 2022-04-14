@@ -1,0 +1,35 @@
+{% extends "layout.html"%}
+
+{% load static %}
+{% block content %}
+<div class="row mt-5">
+    <div class="col-4 mx-auto">
+        {% if waifus %}
+        {% for waifu in waifus %}
+        <div class="container">
+            <div class="card mx-auto ">
+                <img src="{% static waifu.get_image_path %}">
+
+                <div class="card-header ">
+                    <h4>{{waifu.name}}</h4>
+                    <a href="#collapseOne" class="card-link" data-bs-toggle="collapse">See profile</a>
+                </div>
+                <div class="" id="">
+                    <div class="card-body">
+                        <p>{{waifu.description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+        {%else%}
+        <div class="alert alert-warning">
+            <p>
+                No movies
+            </p>
+        </div>
+        {%endif%}
+    </div>
+</div>
+{% endblock %}
